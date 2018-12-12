@@ -1,0 +1,97 @@
+//
+//  SmartTooth.pch
+//  SmartTooth
+//
+//  Created by qinxi on 2018/8/6.
+//  Copyright © 2018年 zhineng. All rights reserved.
+//
+
+#ifdef __OBJC__
+
+#import "UIView+Extension.h"
+#import "JZUserInfo.h"
+#import "MBProgressHUD+Add.h"
+#import "JDAlertCustom.h"
+#import <UIColor+YYAdd.h>
+#import "UFHttpRequest.h"
+#import "UIAlertController+HFExtension.h"
+#import <UIImageView+YYWebImage.h>
+#import <MJExtension.h>
+#import <YYKit.h>
+#import "SmartDefine.h"
+#import <Masonry.h>
+#import <HelpDesk/HelpDesk.h>
+//#import <HealthKit/HealthKit.h>
+#import "HelpDeskUI.h"
+#import "NSString+Valid.h"
+#define kStatusBarHeight [UIApplication sharedApplication].statusBarFrame.size.height
+
+
+/** 屏幕宽度 */
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+/** 屏幕高度 */
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define WidthScale6(x) (ScreenWidth*x)/375
+#define HeightScale6(y) (ScreenHeight*y)/667
+
+#define zlLeftMargin 10
+#define kCollectionItemW 150
+#define kActiveCollectionItemH 220
+#define kclinicCollectionItemH 170
+#define kDoctorListHeaderH  165
+
+#define iPhone6Plus ([UIScreen mainScreen].bounds.size.height == 736) ? YES : NO
+#define iPhone6 ([UIScreen mainScreen].bounds.size.height == 667) ? YES : NO
+
+#define iPhone5 ([UIScreen mainScreen].bounds.size.height == 568) ? YES : NO
+
+#define iPhone4 ([UIScreen mainScreen].bounds.size.height == 480) ? YES : NO
+#define iphoneX  ([UIScreen mainScreen].bounds.size.height == 812) ? YES : NO
+
+//导航栏+工具栏的高度
+#define  kNavigationBarHeight  (kStatusBarHeight+ 44)
+//tabbar 的高度
+#define  kTabBarHeight  (iphoneX ? 83 : 49)
+
+//f17d17  #fa4a3d
+#define DefaultColor [UIColor colorWithRed:250/255.0 green:74/255.0 blue:61/255.0 alpha:1]
+#define MainColor [UIColor colorWithRed:0/255.0 green:96/255.0 blue:240/255.0 alpha:1]
+
+#define kLineColor [UIColor colorWithRed:0/255.0 green:0/255.0 blue:0/255.0 alpha:0.1]
+
+#define kTableViewColor [UIColor colorWithRed:242/255.0 green:245/255.0 blue:250/255.0 alpha:1]
+
+#define UIColorForX(s)  [UIColor colorWithRed:(((s & 0xFF0000) >> 16))/255.0 green:(((s &0xFF00) >>8))/255.0 blue:((s &0xFF))/255.0 alpha:1.0]
+
+#define UIColorForXA(s,a)  [UIColor colorWithRed:(((s & 0xFF0000) >> 16))/255.0 green:(((s &0xFF00) >>8))/255.0 blue:((s &0xFF))/255.0 alpha:a]
+// 颜色值RGB
+
+#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+#define RGB(r,g,b) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1]
+#define UIColorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+#define RANDOMCOLOR [UIColor colorWithRed:(arc4random() % 256 / 255.0 ) green:(arc4random() % 256 / 255.0 ) blue:(arc4random() % 256 / 255.0 ) alpha:1]
+
+#define ISNULL(v) ((NSNull*)v == [NSNull null]||v==nil)
+
+#define notNil(string) (string ? string : @"")
+
+#define XcodeAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define AppId @"12345678987654321"
+#define AppSecret @"745091ce002640d590ac07651c404707"
+#define EffectiveToken @"EffectiveToken"
+
+#define AvatarPlaceholder @"mylogin-tx"
+
+#define iPhoneXBottomHeight  ([UIScreen mainScreen].bounds.size.height==812?34:0)
+#define kWeakSelf __weak __typeof__(self) weakSelf = self;
+
+#define kTouchToRecord @"按住录音"
+#define kTouchToFinish @"松开发送"
+
+#define ToothDefaultIP @"192.168.1.251"
+//#define ToothDefaultIP @"192.168.10.64"
+#define ToothDefaultPort 6666
+#endif /* SmartTooth_h */
+
+

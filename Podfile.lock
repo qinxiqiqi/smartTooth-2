@@ -1,0 +1,72 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - HappyDNS (0.3.14)
+  - JCore (1.1.9)
+  - JPush (3.0.2):
+    - JCore (~> 1.1.1)
+  - Masonry (1.1.0)
+  - MJExtension (3.0.15.1)
+  - Qiniu (7.2.4):
+    - HappyDNS (~> 0.3)
+  - TZImagePickerController (2.2.2)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+  - YZAppSDK (6.4.1):
+    - YZAppSDK/Base (= 6.4.1)
+  - YZAppSDK/Base (6.4.1):
+    - YZAppSDK/Core
+  - YZAppSDK/Core (6.4.1)
+
+DEPENDENCIES:
+  - AFNetworking
+  - JPush (= 3.0.2)
+  - Masonry
+  - MJExtension
+  - Qiniu (~> 7.1)
+  - TZImagePickerController
+  - YYKit
+  - YZAppSDK
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - HappyDNS
+    - JCore
+    - JPush
+    - Masonry
+    - MJExtension
+    - Qiniu
+    - TZImagePickerController
+    - YYKit
+    - YZAppSDK
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  HappyDNS: dc6a164ee81979093123c241c6353bcf0218add6
+  JCore: 27598485098d0db99d2812cba048003457d08cfb
+  JPush: 01a693fafe51b93eafc2e368bbc7a7cc07e12ce4
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJExtension: 19bc33ce2eee2d319760f5622562cf581a6ff756
+  Qiniu: 65384bca1cdb0480a68d9b9b8f54db53418c0355
+  TZImagePickerController: 233a868727a813b4ca810a15035320b3bcb94ead
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  YZAppSDK: c6fa054d617a1ff64639fa019a2417b5cf7c5647
+
+PODFILE CHECKSUM: 621f2ac191b00cb16c97b28bf8eb00010c490bca
+
+COCOAPODS: 1.5.3

@@ -4,6 +4,8 @@
 <dict>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
+	<key>CFBundleDisplayName</key>
+	<string>牙医在线</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -16,10 +18,42 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>prefs</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>App需要您的同意,才能访问媒体资料库</string>
+	<key>NSCameraUsageDescription</key>
+	<string>App需要您的同意,才能访问相机用于更新头像</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>App需要您的同意,才能访问位置</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>App需要您的同意,才能访问位置</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>App需要您的同意,才能访问麦克风</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>App需要您的同意，才能添加图片</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>App需要您的同意,才能访问相册用于更新头像</string>
+	<key>NSRemindersUsageDescription</key>
+	<string>App需要您的同意,才能访问提醒事项</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

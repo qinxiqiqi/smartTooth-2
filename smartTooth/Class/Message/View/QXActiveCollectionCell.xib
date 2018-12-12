@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="QXActiveCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="210"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="210"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jchd_pic" translatesAutoresizingMaskIntoConstraints="NO" id="dA5-aA-G41">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="syE-PC-W1y"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="爸爸我们去哪呀" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKo-va-G85">
+                        <rect key="frame" x="0.0" y="160" width="150" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="TBd-3F-4sg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="花一下午让宝宝爱上刷牙" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yat-5L-l1D">
+                        <rect key="frame" x="0.0" y="184" width="150" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="69y-IF-EYf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.59215686274509804" green="0.59215686274509804" blue="0.59215686274509804" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="lKo-va-G85" firstAttribute="top" secondItem="dA5-aA-G41" secondAttribute="bottom" constant="10" id="Ea3-px-ynC"/>
+                <constraint firstAttribute="trailing" secondItem="lKo-va-G85" secondAttribute="trailing" id="Ic0-2t-0KT"/>
+                <constraint firstItem="dA5-aA-G41" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ief-Jg-iqQ"/>
+                <constraint firstItem="lKo-va-G85" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NHG-ll-KV0"/>
+                <constraint firstItem="yat-5L-l1D" firstAttribute="top" secondItem="lKo-va-G85" secondAttribute="bottom" constant="4" id="VLk-Hf-gqg"/>
+                <constraint firstAttribute="trailing" secondItem="yat-5L-l1D" secondAttribute="trailing" id="YCO-0a-KQF"/>
+                <constraint firstItem="dA5-aA-G41" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="snV-Gc-J64"/>
+                <constraint firstAttribute="trailing" secondItem="dA5-aA-G41" secondAttribute="trailing" id="xy0-WM-6IP"/>
+                <constraint firstItem="yat-5L-l1D" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="znF-wo-M0P"/>
+            </constraints>
+            <size key="customSize" width="121" height="193"/>
+            <point key="canvasLocation" x="69" y="131"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="jchd_pic" width="303" height="302"/>
+    </resources>
+</document>
